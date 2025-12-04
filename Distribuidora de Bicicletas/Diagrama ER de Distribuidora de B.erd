@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="Diagrama ER de Distribuidora de B">
+	<entities>
+		<data-source id="mysql8-19723a0ceeb-6f43c9454051117e">
+			<entity id="1" name="accesorio" fq-name="distribuidora_bicicletas.accesorio">
+				<path name="distribuidora_bicicletas"/>
+			</entity>
+			<entity id="2" name="accesorio_incluido" fq-name="distribuidora_bicicletas.accesorio_incluido">
+				<path name="distribuidora_bicicletas"/>
+			</entity>
+			<entity id="3" name="accesorio_venta" fq-name="distribuidora_bicicletas.accesorio_venta">
+				<path name="distribuidora_bicicletas"/>
+			</entity>
+			<entity id="4" name="bicicleta" fq-name="distribuidora_bicicletas.bicicleta">
+				<path name="distribuidora_bicicletas"/>
+			</entity>
+			<entity id="5" name="cliente" fq-name="distribuidora_bicicletas.cliente">
+				<path name="distribuidora_bicicletas"/>
+			</entity>
+			<entity id="6" name="empleado" fq-name="distribuidora_bicicletas.empleado">
+				<path name="distribuidora_bicicletas"/>
+			</entity>
+			<entity id="7" name="telefono_empleado" fq-name="distribuidora_bicicletas.telefono_empleado">
+				<path name="distribuidora_bicicletas"/>
+			</entity>
+			<entity id="8" name="telefono_tienda" fq-name="distribuidora_bicicletas.telefono_tienda">
+				<path name="distribuidora_bicicletas"/>
+			</entity>
+			<entity id="9" name="tienda" fq-name="distribuidora_bicicletas.tienda">
+				<path name="distribuidora_bicicletas"/>
+			</entity>
+			<entity id="10" name="venta" fq-name="distribuidora_bicicletas.venta">
+				<path name="distribuidora_bicicletas"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="accesorio_incluido_ibfk_2" fq-name="distribuidora_bicicletas.accesorio_incluido.accesorio_incluido_ibfk_2" type="fk" pk-ref="1" fk-ref="2"/>
+		<relation name="accesorio_venta_ibfk_2" fq-name="distribuidora_bicicletas.accesorio_venta.accesorio_venta_ibfk_2" type="fk" pk-ref="1" fk-ref="3"/>
+		<relation name="accesorio_incluido_ibfk_1" fq-name="distribuidora_bicicletas.accesorio_incluido.accesorio_incluido_ibfk_1" type="fk" pk-ref="4" fk-ref="2"/>
+		<relation name="venta_ibfk_3" fq-name="distribuidora_bicicletas.venta.venta_ibfk_3" type="fk" pk-ref="4" fk-ref="10"/>
+		<relation name="venta_ibfk_2" fq-name="distribuidora_bicicletas.venta.venta_ibfk_2" type="fk" pk-ref="5" fk-ref="10"/>
+		<relation name="telefono_empleado_ibfk_1" fq-name="distribuidora_bicicletas.telefono_empleado.telefono_empleado_ibfk_1" type="fk" pk-ref="6" fk-ref="7"/>
+		<relation name="venta_ibfk_1" fq-name="distribuidora_bicicletas.venta.venta_ibfk_1" type="fk" pk-ref="6" fk-ref="10"/>
+		<relation name="empleado_ibfk_1" fq-name="distribuidora_bicicletas.empleado.empleado_ibfk_1" type="fk" pk-ref="9" fk-ref="6"/>
+		<relation name="telefono_tienda_ibfk_1" fq-name="distribuidora_bicicletas.telefono_tienda.telefono_tienda_ibfk_1" type="fk" pk-ref="9" fk-ref="8"/>
+		<relation name="accesorio_venta_ibfk_1" fq-name="distribuidora_bicicletas.accesorio_venta.accesorio_venta_ibfk_1" type="fk" pk-ref="10" fk-ref="3"/>
+	</relations>
+</diagram>

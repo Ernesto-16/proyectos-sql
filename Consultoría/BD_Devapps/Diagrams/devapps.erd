@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="devapps">
+	<entities>
+		<data-source id="mysql8-19a38c51f6d-63646722d7419659">
+			<entity id="1" name="cliente" fq-name="gestion_proyectos_devapps.cliente">
+				<path name="gestion_proyectos_devapps"/>
+			</entity>
+			<entity id="2" name="desarrollador" fq-name="gestion_proyectos_devapps.desarrollador">
+				<path name="gestion_proyectos_devapps"/>
+			</entity>
+			<entity id="3" name="proyecto" fq-name="gestion_proyectos_devapps.proyecto">
+				<path name="gestion_proyectos_devapps"/>
+			</entity>
+			<entity id="4" name="proyecto_desarrollador" fq-name="gestion_proyectos_devapps.proyecto_desarrollador">
+				<path name="gestion_proyectos_devapps"/>
+			</entity>
+			<entity id="5" name="telefono_cliente" fq-name="gestion_proyectos_devapps.telefono_cliente">
+				<path name="gestion_proyectos_devapps"/>
+			</entity>
+			<entity id="6" name="telefono_desarrollador" fq-name="gestion_proyectos_devapps.telefono_desarrollador">
+				<path name="gestion_proyectos_devapps"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="fk_proy_cliente" fq-name="gestion_proyectos_devapps.proyecto.fk_proy_cliente" type="fk" pk-ref="1" fk-ref="3"/>
+		<relation name="fk_tel_cliente" fq-name="gestion_proyectos_devapps.telefono_cliente.fk_tel_cliente" type="fk" pk-ref="1" fk-ref="5"/>
+		<relation name="fk_pd_desarrollador" fq-name="gestion_proyectos_devapps.proyecto_desarrollador.fk_pd_desarrollador" type="fk" pk-ref="2" fk-ref="4"/>
+		<relation name="fk_tel_dev" fq-name="gestion_proyectos_devapps.telefono_desarrollador.fk_tel_dev" type="fk" pk-ref="2" fk-ref="6"/>
+		<relation name="fk_pd_proyecto" fq-name="gestion_proyectos_devapps.proyecto_desarrollador.fk_pd_proyecto" type="fk" pk-ref="3" fk-ref="4"/>
+	</relations>
+</diagram>
