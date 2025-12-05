@@ -15,6 +15,8 @@ Para navegar fácilmente por el repositorio:
 * `[ENTIDAD RELACION.ppg]`: Muetra los atributos , entidades  y relaciones de la distribuidora.
 * [distribuidora_M_relacional .ppg]:Esquema final de tablas y relaciones.
 * [BaseDeDatosConsultoría .ppg]:muestra el modelo E/R
+* [/DIstribuidora de Bicicletas BD.sql]:Script para craear la BD, generar las tablas y restricciones .
+* [/Bicicletas Consultas.sql]:Algunas consultas de la BD
 ### 1. Diseño Conceptual (`/Diagrams`)
 *Aquí encontrarás los diagramas visuales que explican la arquitectura de la base de datos.*
 * `[Devapps_er.]`: Diagrama Entidad-Relación principal de la conusltoria echa por DBeaber para la consultoría.
@@ -22,8 +24,8 @@ Para navegar fácilmente por el repositorio:
 
 ### 2. Scripts SQL (`/Scrits`)
 *Aquí está el código fuente.*
-* `[crear_base.sql]`: Script para generar las tablas y restricciones.
-* `[consultas.sql]`: Ejemplos de queries utilizadas para reportes de negocio.
+* `[Creación BD.sql]`: Para crear solo la BD.
+* `[Creación de tabals y relaciones .sql]`:Script para generar las tablas y restricciones .
 
 ### 3. Otros Archivos
 * `[...configuraciones, etc.]`: Archivos de soporte del entorno del proyecto.
