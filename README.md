@@ -31,4 +31,4 @@ Para navegar fácilmente por el repositorio:
 * `[...configuraciones, etc.]`: Archivos de soporte del entorno del proyecto.
 
 ---
-*Proyecto de portafolio - [Tu Nombre]*
+*[Ernesto Ramirez Vega]*
