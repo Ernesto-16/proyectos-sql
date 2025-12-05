@@ -1,4 +1,4 @@
-# [Título del Proyecto: Ej. Sistema de Base de Datos para Distribuidora]
+# [ Sistema de Base de Datos para Distribuidora y Consultoría]
 
 ## 📖 Descripción
 Este repositorio contiene el proyecto completo de diseño e implementación de una base de datos relacional para [una consultoría de desarollo de software  y  una distribuidora de bicicletas].
